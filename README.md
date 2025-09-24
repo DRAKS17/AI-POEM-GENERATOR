@@ -14,29 +14,51 @@ A collaborative poetry generator that uses OpenAI's GPT model to create beautifu
 - 🐍 Python Flask backend
 
 🚀 Quick Start
+
 Prerequisites
+
 Python 3.8 or higher
+
 Google Gemini API key (free from Google AI Studio)
+
 
 📁 Project Structure
 ai-poetry-generator/
+
 ├── backend/
+
 │   ├── app.py                 # Main Flask application
+
 │   ├── .env                   # Environment variables (create this)
+
 │   └── __init__.py           # Python package file
+
 ├── frontend/
+
 │   ├── templates/
+
 │   │   └── index.html        # Main HTML template
+
 │   └── static/
+
 │       ├── css/
+
 │       │   └── style.css     # Stylesheets
+
 │       ├── js/
+
 │       │   └── script.js     # Frontend JavaScript
+
 │       └── uploads/
+
 │           └── .gitkeep      # Empty directory for saved poems
+
 ├── run.py                    # Application entry point
+
 ├── requirements.txt          # Python dependencies
+
 ├── README.md                # This file
+
 └── .gitignore               # Git ignore rules
 
 🎮 How to Use
