@@ -1,30 +1,39 @@
-# AI Poetry Generator - Python Flask Edition 📝
+AI Poetry Generator - Google Gemini Edition 📝
+This project provides an AI-powered poetry generation service with a web interface:
 
-A collaborative poetry generator that uses OpenAI's GPT model to create beautiful poems based on your chosen themes and words, built with Python Flask.
+Web Application (Flask): A beautiful web-based poetry generator accessible via browser.
 
-## Features
+Interactive Poetry Creation: Collaborate with AI to build poems line by line.
 
-- 🎭 Multiple poetry themes (Romantic, Nature, Melancholy, Inspirational)
-- 🤖 AI-powered poem generation using OpenAI GPT
-- 🔒 Secure API key storage (server-side only)
-- 💫 Beautiful, responsive design
-- 📊 Real-time poem statistics
-- 💾 Save your poems as text files
-- 🎨 Interactive word suggestions
-- 🐍 Python Flask backend
+The application leverages the Google Gemini API for creative poetry generation.
 
-🚀 Quick Start
+Features
+🎭 Multiple Poetry Themes: Romantic, Nature, Melancholy, Inspirational
 
-Prerequisites
+🤖 AI-Powered Generation: Powered by Google Gemini 1.5 Flash
 
-Python 3.8 or higher
+💫 Beautiful Interface: Responsive design with smooth animations
 
-Google Gemini API key (free from Google AI Studio)
+📊 Real-time Statistics: Track lines, words, and characters
 
-🎮 How to Use
+💾 Save Your Poems: Download poems as text files
 
-Start the Server: Run python run.py and open http://localhost:5000
+🎨 Interactive Suggestions: Theme-based word suggestions
 
+🔒 Secure API Key Storage: Server-side only configuration
+
+Technologies Used
+Flask: A lightweight Python web framework for the web application
+
+Google Generative AI (Gemini API): Powers the poetry generation functionality
+
+HTML, CSS, JavaScript: For the web application's user interface
+
+python-dotenv: Environment variable management
+
+Flask-CORS: Cross-origin resource sharing
+
+Web Application
 Choose a Theme: Select from Romantic, Nature, Melancholy, or Inspirational
 
 Generate First Line: Click "Generate First Line" to start your poem
@@ -34,3 +43,17 @@ Add More Lines: Enter words and click "Generate Next Line" to continue
 Use Suggestions: Click on suggested words for quick inspiration
 
 Save Your Poem: Click "Save Poem" to download your creation
+
+Example Poetry Session:
+
+Theme: Romantic
+
+First Line: "In the quiet whispers of the evening breeze"
+
+User Input: "love"
+
+Generated Line: "Our hearts entwined like ancient oak trees"
+
+User Input: "eternal"
+
+Generated Line: "A bond that time itself could never ease"
