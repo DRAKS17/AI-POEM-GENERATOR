@@ -22,9 +22,15 @@ Python 3.8 or higher
 Google Gemini API key (free from Google AI Studio)
 
 🎮 How to Use
+
 Start the Server: Run python run.py and open http://localhost:5000
+
 Choose a Theme: Select from Romantic, Nature, Melancholy, or Inspirational
+
 Generate First Line: Click "Generate First Line" to start your poem
+
 Add More Lines: Enter words and click "Generate Next Line" to continue
+
 Use Suggestions: Click on suggested words for quick inspiration
+
 Save Your Poem: Click "Save Poem" to download your creation
