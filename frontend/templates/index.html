@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Poetry Generator - Gemini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 AI Poetry Generator</h1>
+            <p class="subtitle">Collaborate with Google Gemini AI to create beautiful poetry</p>
+            <div class="server-status">
+                <span id="serverStatus">Checking server connection...</span>
+            </div>
+        </div>
+        
+        <div class="theme-selector">
+            <button class="theme-btn active" data-theme="romantic">💖 Romantic</button>
+            <button class="theme-btn" data-theme="nature">🌿 Nature</button>
+            <button class="theme-btn" data-theme="melancholy">🌧️ Melancholy</button>
+            <button class="theme-btn" data-theme="inspirational">✨ Inspirational</button>
+        </div>
+        
+        <div class="poem-display" id="poem">
+            Click "Generate First Line" to start your poetic journey!
+        </div>
+        
+        <div class="controls">
+            <div class="input-group">
+                <input type="text" id="userInput" placeholder="Enter a word or phrase to inspire the next line...">
+                <button id="generateBtn">Generate Next Line</button>
+            </div>
+            <div class="suggestions" id="suggestions">
+                <!-- Suggestions will be dynamically added -->
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Gemini AI is crafting your poetry...</span>
+        </div>
+        
+        <div class="action-buttons">
+            <button id="firstLineBtn" class="btn-primary">🎭 Generate First Line</button>
+            <button id="newPoemBtn" class="btn-secondary">🔄 Start New Poem</button>
+            <button id="savePoemBtn" class="btn-success">💾 Save Poem</button>
+        </div>
+        
+        <div class="poem-stats" id="poemStats">
+            Lines: 0 | Words: 0 | Characters: 0
+        </div>
+
+        <div class="footer">
+            <p>Powered by Google Gemini 1.5 Flash • Python Flask Backend</p>
+            <p class="api-info">Get your free Gemini API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
